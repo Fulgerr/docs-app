@@ -115,8 +115,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Studio',
+                to: '/studio/',
               },
             ],
           },
@@ -138,11 +138,11 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Docs',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Orchestrator',
+                to: '/orchestrator/',
               },
               {
                 label: 'GitHub',
