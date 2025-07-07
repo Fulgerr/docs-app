@@ -96,7 +96,7 @@ const config = {
     },
     {
       type: 'docSidebar',
-      sidebarId: 'studioSidebar', // update as needed
+      sidebarId: 'orchestratorSidebar', // update as needed
       position: 'left',
       label: 'Orchestrator',
       docsPluginId: 'orchestrator',
