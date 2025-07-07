@@ -49,6 +49,8 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        blog: false,
+        docs: false,
       }),
     ],
   ],
@@ -85,13 +87,20 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
+           {
+      type: 'docSidebar',
+      sidebarId: 'studioSidebar', // assuming your sidebars-studio.js exports this
+      position: 'left',
+      label: 'Studio',
+      docsPluginId: 'studio', // Required for multi-instance docs
+    },
+    {
+      type: 'docSidebar',
+      sidebarId: 'orchestratorSidebar', // update as needed
+      position: 'left',
+      label: 'Orchestrator',
+      docsPluginId: 'orchestrator',
+    },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
