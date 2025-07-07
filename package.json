@@ -2,6 +2,7 @@
   "name": "docs-app",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://Fulgerr.github.io/docs-app",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
