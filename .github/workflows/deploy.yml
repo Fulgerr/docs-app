@@ -15,6 +15,15 @@ jobs:
       - name: Clone docs-content repository
         run: git clone --depth 1 --branch main https://x-access-token:${{ secrets.GH_CONTENT_READ_TOKEN }}@github.com/Fulgerr/docs-content.git content
 
+      - name: List files in content directory
+        run: |
+          echo "=== LISTING CONTENT FOLDER ==="
+          ls -lR content
+          echo "=== LISTING Studio/docs FOLDER ==="
+          ls -lR content/Studio/docs || echo "No Studio/docs folder"
+          echo "=== LISTING Orchestrator/docs FOLDER ==="
+          ls -lR content/Orchestrator/docs || echo "No Orchestrator/docs folder"
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
