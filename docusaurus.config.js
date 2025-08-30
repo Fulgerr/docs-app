@@ -29,7 +29,9 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
-
+  customFields: {
+  aptabaseAppKey: process.env.APTABASE_APP_KEY || 'A-EU-5971610612',
+  },
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
